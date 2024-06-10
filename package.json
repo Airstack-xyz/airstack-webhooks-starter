@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts && ngrok http 4000"
+    "start": "nodemon src/index.ts",
+    "ngrok": "ngrok http 4000",
+    "create:webhook": "ts-node src/create-webhook.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.2",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
